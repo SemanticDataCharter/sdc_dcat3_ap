@@ -1,0 +1,95 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://semanticdatacharter.com/catalogs/governed-data-records> a dcat:Catalog ;
+    dct:description "Collections of Governed Data Records, one per published Semantic Data Charter model, each described by the immutable schema its records conform to."@en ;
+    dct:issued "2026-09-26"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:modified "2026-09-26"^^xsd:date ;
+    dct:publisher <https://axius-sdc.com> ;
+    dct:title "Semantic Data Charter governed data records"@en ;
+    dcat:dataset <https://semanticdatacharter.com/ns/sdc4/dm-xy8upneajsb8vdcmnve01g6g> ;
+    dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> ;
+    foaf:homepage <https://semanticdatacharter.com> .
+
+<http://creativecommons.org/licenses/by/3.0/> a dct:LicenseDocument .
+
+<http://publications.europa.eu/resource/authority/access-right/PUBLIC> a dct:RightsStatement .
+
+<http://publications.europa.eu/resource/authority/data-theme/HEAL> a skos:Concept ;
+    skos:inScheme <http://publications.europa.eu/resource/authority/data-theme> ;
+    skos:prefLabel "Health"@en .
+
+<http://publications.europa.eu/resource/authority/file-type/XML> a dct:MediaTypeOrExtent .
+
+<http://purl.org/adms/publishertype/Company> a skos:Concept ;
+    skos:prefLabel "Company"@en .
+
+<https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/xy8upneajsb8vdcmnve01g6g/> a foaf:Document ;
+    dct:title "NHANES Participant in the public catalog"@en .
+
+<https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd> a foaf:Document ;
+    dct:conformsTo <https://semanticdatacharter.com/ns/sdc4/sdc4.xsd> ;
+    dct:description "The immutable schema every NHANES Participant record is validated against: 153 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing. Current version SHA-256 0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b."@en ;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    dct:title "SDC4 schema dm-xy8upneajsb8vdcmnve01g6g: the data dictionary of NHANES Participant"@en .
+
+<https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd?sha256=0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b> a dct:Standard ;
+    dct:identifier "sha256:0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b" ;
+    dct:issued "2026-09-26"^^xsd:date ;
+    dct:title "SDC4 schema dm-xy8upneajsb8vdcmnve01g6g (NHANES Participant)"@en .
+
+<https://semanticdatacharter.com> a foaf:Document ;
+    dct:title "Semantic Data Charter governed data records"@en .
+
+<https://semanticdatacharter.com/ns/sdc4/dm-xy8upneajsb8vdcmnve01g6g> a dcat:Dataset ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:conformsTo <https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd?sha256=0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b> ;
+    dct:creator [ a foaf:Agent ;
+            foaf:name "Timothy Cook" ] ;
+    dct:description "SDC4 data model for National Health and Nutrition Examination Survey (nhanes_blood_pressure) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model NHANES Participant (dm-xy8upneajsb8vdcmnve01g6g), published 2026-09-26. The schema is immutable and defines every variable's name, definition, datatype, units and permitted values; it is cited by URL and SHA-256 as the standard the records conform to and as the page that documents them."@en ;
+    dct:identifier "dm-xy8upneajsb8vdcmnve01g6g" ;
+    dct:issued "2026-09-26"^^xsd:date ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dct:license <http://creativecommons.org/licenses/by/3.0/> ;
+    dct:modified "2026-09-26"^^xsd:date ;
+    dct:provenance [ a dct:ProvenanceStatement ;
+            rdfs:label "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). See https://semanticdatacharter.com/permanence.html."@en ] ;
+    dct:publisher <https://axius-sdc.com> ;
+    dct:title "NHANES Participant governed data records"@en ;
+    adms:identifier [ a adms:Identifier ;
+            skos:notation "dm-xy8upneajsb8vdcmnve01g6g" ;
+            adms:schemaAgency "Semantic Data Charter" ] ;
+    dcat:contactPoint [ a vcard:Kind ;
+            vcard:fn "Axius SDC, Inc. DCAT-AP contact" ;
+            vcard:hasEmail <mailto:contact@axius-sdc.com> ] ;
+    dcat:keyword "FAIR Data Demo"@en,
+        "SDC4"@en,
+        "Semantic Data Charter"@en,
+        "governed data record"@en ;
+    dcat:landingPage <https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/xy8upneajsb8vdcmnve01g6g/> ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/HEAL> ;
+    dcat:version "0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b" ;
+    foaf:page <https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd> .
+
+<https://semanticdatacharter.com/ns/sdc4/sdc4.xsd> a dct:Standard ;
+    dct:title "SDC4 reference model"@en .
+
+<http://publications.europa.eu/resource/authority/data-theme> a skos:ConceptScheme ;
+    dct:title "EU Vocabularies Data Theme"@en .
+
+<http://publications.europa.eu/resource/authority/language/ENG> a dct:LinguisticSystem .
+
+<https://axius-sdc.com> a foaf:Agent,
+        foaf:Document ;
+    dct:title "Axius SDC, Inc."@en ;
+    dct:type <http://purl.org/adms/publishertype/Company> ;
+    foaf:homepage <https://axius-sdc.com> ;
+    foaf:name "Axius SDC, Inc." .
+
