@@ -1,0 +1,410 @@
+[
+ {
+  "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/xy8upneajsb8vdcmnve01g6g/",
+  "@type": [
+   "http://xmlns.com/foaf/0.1/Document"
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "NHANES Participant in the public catalog"
+   }
+  ]
+ },
+ {
+  "@id": "http://purl.org/adms/publishertype/Company",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "en",
+    "@value": "Company"
+   }
+  ]
+ },
+ {
+  "@id": "https://semanticdatacharter.com",
+  "@type": [
+   "http://xmlns.com/foaf/0.1/Document"
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "Semantic Data Charter governed data records"
+   }
+  ]
+ },
+ {
+  "@id": "https://semanticdatacharter.com/catalogs/governed-data-records",
+  "@type": [
+   "http://www.w3.org/ns/dcat#Catalog"
+  ],
+  "http://purl.org/dc/terms/description": [
+   {
+    "@language": "en",
+    "@value": "Collections of Governed Data Records, one per published Semantic Data Charter model, each described by the immutable schema its records conform to."
+   }
+  ],
+  "http://purl.org/dc/terms/issued": [
+   {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-09-26"
+   }
+  ],
+  "http://purl.org/dc/terms/language": [
+   {
+    "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+   }
+  ],
+  "http://purl.org/dc/terms/modified": [
+   {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-09-26"
+   }
+  ],
+  "http://purl.org/dc/terms/publisher": [
+   {
+    "@id": "https://axius-sdc.com"
+   }
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "Semantic Data Charter governed data records"
+   }
+  ],
+  "http://www.w3.org/ns/dcat#dataset": [
+   {
+    "@id": "https://semanticdatacharter.com/ns/sdc4/dm-xy8upneajsb8vdcmnve01g6g"
+   }
+  ],
+  "http://www.w3.org/ns/dcat#themeTaxonomy": [
+   {
+    "@id": "http://publications.europa.eu/resource/authority/data-theme"
+   }
+  ],
+  "http://xmlns.com/foaf/0.1/homepage": [
+   {
+    "@id": "https://semanticdatacharter.com"
+   }
+  ]
+ },
+ {
+  "@id": "http://publications.europa.eu/resource/authority/data-theme/HEAL",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#Concept"
+  ],
+  "http://www.w3.org/2004/02/skos/core#inScheme": [
+   {
+    "@id": "http://publications.europa.eu/resource/authority/data-theme"
+   }
+  ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel": [
+   {
+    "@language": "en",
+    "@value": "Health"
+   }
+  ]
+ },
+ {
+  "@id": "https://semanticdatacharter.com/ns/sdc4/dm-xy8upneajsb8vdcmnve01g6g",
+  "@type": [
+   "http://www.w3.org/ns/dcat#Dataset"
+  ],
+  "http://purl.org/dc/terms/accessRights": [
+   {
+    "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+   }
+  ],
+  "http://purl.org/dc/terms/conformsTo": [
+   {
+    "@id": "https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd?sha256=0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b"
+   }
+  ],
+  "http://purl.org/dc/terms/creator": [
+   {
+    "@id": "_:N0826ec7920df47b1b4047c520c9752cb"
+   }
+  ],
+  "http://purl.org/dc/terms/description": [
+   {
+    "@language": "en",
+    "@value": "SDC4 data model for National Health and Nutrition Examination Survey (nhanes_blood_pressure) — FAIR Data Demo. Each record is a governed data record conforming to the Semantic Data Charter model NHANES Participant (dm-xy8upneajsb8vdcmnve01g6g), published 2026-09-26. The schema is immutable and defines every variable's name, definition, datatype, units and permitted values; it is cited by URL and SHA-256 as the standard the records conform to and as the page that documents them."
+   }
+  ],
+  "http://purl.org/dc/terms/identifier": [
+   {
+    "@value": "dm-xy8upneajsb8vdcmnve01g6g"
+   }
+  ],
+  "http://purl.org/dc/terms/issued": [
+   {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-09-26"
+   }
+  ],
+  "http://purl.org/dc/terms/language": [
+   {
+    "@id": "http://publications.europa.eu/resource/authority/language/ENG"
+   }
+  ],
+  "http://purl.org/dc/terms/license": [
+   {
+    "@id": "http://creativecommons.org/licenses/by/3.0/"
+   }
+  ],
+  "http://purl.org/dc/terms/modified": [
+   {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-09-26"
+   }
+  ],
+  "http://purl.org/dc/terms/provenance": [
+   {
+    "@id": "_:N507c836a5e8b4f68b1e33793b9a4d245"
+   }
+  ],
+  "http://purl.org/dc/terms/publisher": [
+   {
+    "@id": "https://axius-sdc.com"
+   }
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "NHANES Participant governed data records"
+   }
+  ],
+  "http://www.w3.org/ns/adms#identifier": [
+   {
+    "@id": "_:N6827ae82fb5d42859d5ead6fe471072e"
+   }
+  ],
+  "http://www.w3.org/ns/dcat#contactPoint": [
+   {
+    "@id": "_:N6d5b394c39d64f7ba058573544321c51"
+   }
+  ],
+  "http://www.w3.org/ns/dcat#keyword": [
+   {
+    "@language": "en",
+    "@value": "FAIR Data Demo"
+   },
+   {
+    "@language": "en",
+    "@value": "Semantic Data Charter"
+   },
+   {
+    "@language": "en",
+    "@value": "SDC4"
+   },
+   {
+    "@language": "en",
+    "@value": "governed data record"
+   }
+  ],
+  "http://www.w3.org/ns/dcat#landingPage": [
+   {
+    "@id": "https://sdcstudio.axius-sdc.com/api/v1/catalog/dm/xy8upneajsb8vdcmnve01g6g/"
+   }
+  ],
+  "http://www.w3.org/ns/dcat#theme": [
+   {
+    "@id": "http://publications.europa.eu/resource/authority/data-theme/HEAL"
+   }
+  ],
+  "http://www.w3.org/ns/dcat#version": [
+   {
+    "@value": "0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b"
+   }
+  ],
+  "http://xmlns.com/foaf/0.1/page": [
+   {
+    "@id": "https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd"
+   }
+  ]
+ },
+ {
+  "@id": "_:N6827ae82fb5d42859d5ead6fe471072e",
+  "@type": [
+   "http://www.w3.org/ns/adms#Identifier"
+  ],
+  "http://www.w3.org/2004/02/skos/core#notation": [
+   {
+    "@value": "dm-xy8upneajsb8vdcmnve01g6g"
+   }
+  ],
+  "http://www.w3.org/ns/adms#schemaAgency": [
+   {
+    "@value": "Semantic Data Charter"
+   }
+  ]
+ },
+ {
+  "@id": "_:N0826ec7920df47b1b4047c520c9752cb",
+  "@type": [
+   "http://xmlns.com/foaf/0.1/Agent"
+  ],
+  "http://xmlns.com/foaf/0.1/name": [
+   {
+    "@value": "Timothy Cook"
+   }
+  ]
+ },
+ {
+  "@id": "_:N6d5b394c39d64f7ba058573544321c51",
+  "@type": [
+   "http://www.w3.org/2006/vcard/ns#Kind"
+  ],
+  "http://www.w3.org/2006/vcard/ns#fn": [
+   {
+    "@value": "Axius SDC, Inc. DCAT-AP contact"
+   }
+  ],
+  "http://www.w3.org/2006/vcard/ns#hasEmail": [
+   {
+    "@id": "mailto:contact@axius-sdc.com"
+   }
+  ]
+ },
+ {
+  "@id": "_:N507c836a5e8b4f68b1e33793b9a4d245",
+  "@type": [
+   "http://purl.org/dc/terms/ProvenanceStatement"
+  ],
+  "http://www.w3.org/2000/01/rdf-schema#label": [
+   {
+    "@language": "en",
+    "@value": "A published Semantic Data Charter model never changes; a revision is a new model naming the one it revised (prov:wasRevisionOf). See https://semanticdatacharter.com/permanence.html."
+   }
+  ]
+ },
+ {
+  "@id": "http://publications.europa.eu/resource/authority/language/ENG",
+  "@type": [
+   "http://purl.org/dc/terms/LinguisticSystem"
+  ]
+ },
+ {
+  "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC",
+  "@type": [
+   "http://purl.org/dc/terms/RightsStatement"
+  ]
+ },
+ {
+  "@id": "https://axius-sdc.com",
+  "@type": [
+   "http://xmlns.com/foaf/0.1/Agent",
+   "http://xmlns.com/foaf/0.1/Document"
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "Axius SDC, Inc."
+   }
+  ],
+  "http://purl.org/dc/terms/type": [
+   {
+    "@id": "http://purl.org/adms/publishertype/Company"
+   }
+  ],
+  "http://xmlns.com/foaf/0.1/homepage": [
+   {
+    "@id": "https://axius-sdc.com"
+   }
+  ],
+  "http://xmlns.com/foaf/0.1/name": [
+   {
+    "@value": "Axius SDC, Inc."
+   }
+  ]
+ },
+ {
+  "@id": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd",
+  "@type": [
+   "http://purl.org/dc/terms/Standard"
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "SDC4 reference model"
+   }
+  ]
+ },
+ {
+  "@id": "http://publications.europa.eu/resource/authority/data-theme",
+  "@type": [
+   "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "EU Vocabularies Data Theme"
+   }
+  ]
+ },
+ {
+  "@id": "http://creativecommons.org/licenses/by/3.0/",
+  "@type": [
+   "http://purl.org/dc/terms/LicenseDocument"
+  ]
+ },
+ {
+  "@id": "https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd",
+  "@type": [
+   "http://xmlns.com/foaf/0.1/Document"
+  ],
+  "http://purl.org/dc/terms/conformsTo": [
+   {
+    "@id": "https://semanticdatacharter.com/ns/sdc4/sdc4.xsd"
+   }
+  ],
+  "http://purl.org/dc/terms/description": [
+   {
+    "@language": "en",
+    "@value": "The immutable schema every NHANES Participant record is validated against: 153 variables with their definitions, datatypes, units, enumerated values and codes, and the sixteen typed reasons a value may be missing. Current version SHA-256 0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b."
+   }
+  ],
+  "http://purl.org/dc/terms/format": [
+   {
+    "@id": "http://publications.europa.eu/resource/authority/file-type/XML"
+   }
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "SDC4 schema dm-xy8upneajsb8vdcmnve01g6g: the data dictionary of NHANES Participant"
+   }
+  ]
+ },
+ {
+  "@id": "https://sdcstudio.axius-sdc.com/dmlib/dm-xy8upneajsb8vdcmnve01g6g.xsd?sha256=0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b",
+  "@type": [
+   "http://purl.org/dc/terms/Standard"
+  ],
+  "http://purl.org/dc/terms/identifier": [
+   {
+    "@value": "sha256:0df45878b0db1c1515e860a4b9993c5f086ffaaebc4c16aaae2092e1da3d3b3b"
+   }
+  ],
+  "http://purl.org/dc/terms/issued": [
+   {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-09-26"
+   }
+  ],
+  "http://purl.org/dc/terms/title": [
+   {
+    "@language": "en",
+    "@value": "SDC4 schema dm-xy8upneajsb8vdcmnve01g6g (NHANES Participant)"
+   }
+  ]
+ },
+ {
+  "@id": "http://publications.europa.eu/resource/authority/file-type/XML",
+  "@type": [
+   "http://purl.org/dc/terms/MediaTypeOrExtent"
+  ]
+ }
+]

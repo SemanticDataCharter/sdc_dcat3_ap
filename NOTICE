@@ -1,0 +1,12 @@
+sdcdcatap
+Copyright 2026 Axius SDC, Inc.
+
+Licensed under the Apache License, Version 2.0.
+
+This package's output follows DCAT-AP 3.0.1, the DCAT Application Profile for data portals in Europe, a SEMIC
+Recommendation maintained by the SEMIC action of Interoperable Europe (European Commission, DG DIGIT), an application
+profile of the W3C Data Catalog Vocabulary version 3. The SHACL shapes, JSON-LD context, examples and changelog in
+data/ are copied from https://github.com/SEMICeu/DCAT-AP at a pinned commit, © European Union, licensed CC BY 4.0, and
+keep that licence here. The Interoperability Test Bed's SEMIC SHACL validator (https://www.itb.ec.europa.eu/shacl/dcat-ap/)
+is used as a second judge over the network and is not redistributed. The sdccdif package loader and model reader are
+reused from https://github.com/SemanticDataCharter/sdc_cdif.

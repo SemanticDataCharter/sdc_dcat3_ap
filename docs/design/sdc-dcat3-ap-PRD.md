@@ -1,6 +1,6 @@
 # sdc_dcat3_ap PRD: one SDC model, described in DCAT-AP 3.0.1
 
-**Status:** v0.1, 9 October 2026, DRAFT for Tim. The third projection demo of the projections track (ContentStrategy
+**Status:** v0.2, 9 October 2026: **implemented; the NHANES Participant catalog passes SEMIC's shapes at the pin and the Interoperability Test Bed's four groups** (section 6; Tim: "go"). The third projection demo of the projections track (ContentStrategy
 lane 5.6): a public repository in the SemanticDataCharter org, one writer, the target's own validator pinned by
 commit, one passing document from a published model on production, the README as the essay in four parts. No issues
 are filed on the target's repositories (Tim, 9 October). Order of the track so far: CDIF, DCAT-US 3.0, now DCAT-AP;
@@ -160,8 +160,11 @@ same record. Its own PRD section when phase 1 is green.
    contact", `contact@axius-sdc.com`).
 5. **The schema fills `dct:conformsTo` and `foaf:page`**: the standard the records conform to, and the document that
    defines their variables. DCAT-AP has no data-dictionary slot; this is the nearest honest pair.
-6. **The judge is the ITB `full` validation with zero violations**, warnings allowed and listed; the local shapes are
-   the offline gate in CI.
+6. **The judge is the ITB's four groups read individually** (`base0`, `range0`, `codelists`, `rec`), each
+   `conforms`, warnings allowed and listed; the local shapes are the offline gate in CI. **Amended while building:**
+   `full` was the proposed judge, but `full` and `base` report eleven violations that an empty minimal catalog
+   receives identically (five unnamed blank-node agents, six ADMS concept schemes without a title), from the
+   background knowledge those types load. No document can clear them, so they are not a judgment on the document.
 7. **No `dcat:distribution` on the sample**, as in DCAT-US.
 
 ## 5. Pipeline
@@ -170,3 +173,24 @@ same record. Its own PRD section when phase 1 is green.
 and `model.py` from `sdcdcatus`; `dcatap.py` builds the graph; `cli.py`: `sdcdcatap write --package DIR [--catalog
 catalog.yaml] --out catalog.ttl [--jsonld catalog.jsonld]`), then `tests/` (pySHACL with the pinned shapes against
 our output and against SEMIC's own examples as a sanity check; an ITB test behind a network marker), then the README.
+
+## 6. Results, 9 October 2026
+
+- `samples/nhanes-participant/catalog.ttl` and `catalog.jsonld` (one graph, 90 triples): a Catalog with one Dataset,
+  written from the package fetched from production (schema SHA-256 `0df45878...3b3b`, the published current version).
+- Offline, pySHACL at 4470b8e: the mandatory-property shapes and the range shapes `conforms`, in both serializations.
+  The range file lists 206 property shapes it does not define; the tests drop those references (pySHACL refuses to
+  run otherwise; Jena passes over them), leaving the 91 defined property shapes.
+- Interoperability Test Bed v1.14.0-SNAPSHOT, REST API: `base0` conforms; `range0` conforms; `codelists` conforms
+  with 3 warnings (the publisher is not in the Corporate Bodies NAL); `rec` conforms with 19 warnings (nine of them
+  Dataset recommendations fired on the Catalog, which DCAT makes a subclass of Dataset); `full` 11 violations, all
+  present on an empty minimal catalog, so from the validator's background knowledge. Turtle and JSON-LD identical.
+- 8 tests, one behind a `network` marker that CI skips.
+- Decisions 1 to 5 and 7 as written; 6 amended above. Added while building: `dcat:themeTaxonomy` on the Catalog
+  (the codelist check expects the EU Data Theme vocabulary there) and a `skos:prefLabel` on the ADMS publisher-type
+  concept (the base shapes label every concept in the graph).
+- **Held privately, not for the README's part 4 beyond the behavior it describes:** the dangling `sh:property`
+  references in `ranges.ttl` and the background-knowledge violations in the ITB's `base`/`full` types are, on their
+  face, defects inside SEMIC's and the ITB's own scope. No issues filed (Tim, 9 October).
+- Phase 2 (HealthDCAT-AP, Release 8) and section 3.3 (the seven FAIR Data Demo models) not started; both are the
+  same writer over different shapes or a list.
