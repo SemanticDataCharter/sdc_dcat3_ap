@@ -147,8 +147,10 @@ rather than on these.
 
 ## Layout
 
-- `src/sdcdcatap/`: `package.py` and `model.py` (reused from `sdc_cdif` and `sdc_dcat3_us`), `dcatap.py` (the
-  graph), `cli.py`, `data/catalog.yaml` (the declared input for the sample).
+- The model's package is read with [`sdcreader`](https://github.com/SemanticDataCharter/sdcreader) (`load_package`,
+  `fetch_package`, `read_model`): the record tree, its leaves, the enumerated values with their codes, the model's
+  Dublin Core with SDCStudio's defaults as unset. The package format is documented there, once.
+- `src/sdcdcatap/`: `dcatap.py` (the graph), `cli.py`, `data/catalog.yaml` (the declared input for the sample).
 - `data/dcat-ap-3.0.1-4470b8e/`: SEMIC's shapes, context, examples and changelog at the pin.
 - `samples/nhanes-participant/`: the model's package as fetched and the catalog written from it, in Turtle and JSON-LD.
 - `build/snapshot_dcat_ap.py`: re-creates `data/` from a read-only clone of `SEMICeu/DCAT-AP` at the pinned commit.

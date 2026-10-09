@@ -5,9 +5,8 @@ its schema cited as the standard the records conform to (dct:conformsTo) and as 
 variables (foaf:page), by URL and SHA-256. Validated with SEMIC's own SHACL shapes at a pinned commit and with the
 Interoperability Test Bed's validator.
 """
-from .package import ModelPackage, load_package, fetch_package
-from .model import read_model
+from sdcreader import ModelPackage, load_package, fetch_package, read_model
 from .dcatap import build_catalog, load_declared, DeclaredInputError
 
-__version__ = "0.1.0"
+__version__ = "4.0.0"
 __all__ = ["ModelPackage", "load_package", "fetch_package", "read_model", "build_catalog", "load_declared", "DeclaredInputError", "__version__"]
