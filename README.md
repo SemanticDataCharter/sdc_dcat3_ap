@@ -1,5 +1,7 @@
 # sdc_dcat3_ap
 
+<!-- mcp-name: io.github.SemanticDataCharter/sdcdcatap -->
+
 One Semantic Data Charter model, described in DCAT-AP 3.0.1.
 
 `sdcdcatap` reads a published SDC model's package and writes the `dcat:Catalog` that DCAT-AP, the DCAT Application
@@ -144,6 +146,18 @@ rather than on these.
 - **`dcat:version` is a DCAT 3 property that rdflib's closed `DCAT` namespace does not know**; build the IRI by hand.
 - **The language is a NAL concept, not a tag.** `dct:language` takes `http://publications.europa.eu/resource/authority/language/ENG`,
   a `dct:LinguisticSystem`; a BCP 47 string fails the ranges.
+
+## MCP server
+
+`sdcdcatap` is also an MCP server, registered as `io.github.SemanticDataCharter/sdcdcatap`, so an assistant that can read a
+published model with `sdcreader` can ask for its DCAT-AP 3.0.1 description. One tool, `write_catalog`, over the same
+function the CLI calls; stdio; read-only apart from the document it returns; no account; no tool takes a URL (the
+catalog host is fixed at start with `--host`). The protocol scaffold is `sdcreader.mcp`, shared by every SDC
+projection server.
+
+```
+uvx sdcdcatap mcp            # or: sdcdcatap-mcp, or sdcdcatap mcp
+```
 
 ## Layout
 
