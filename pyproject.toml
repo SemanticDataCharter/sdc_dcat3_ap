@@ -4,29 +4,31 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sdcdcatap"
-version = "4.0.1"
+version = "4.1.0"
 description = "Describe published Semantic Data Charter models' governed data records in a DCAT-AP 3.0.1 catalog."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
 authors = [{ name = "Axius SDC, Inc." }]
-keywords = ["dcat-ap", "dcat", "semic", "data.europa.eu", "sdc", "fair"]
+keywords = ["dcat-ap", "dcat", "semic", "data.europa.eu", "sdc", "fair", "mcp"]
 
 dependencies = [
     # the model's package, read once for every projection
-    "sdcreader>=4.1,<5",
+    "sdcreader>=4.2,<5",
     "lxml>=5.0",
     "pyyaml>=6.0",
     "rdflib>=7.0",
 ]
 
 [project.optional-dependencies]
-fetch = ["sdcreader>=4.1,<5"]
+fetch = ["sdcreader>=4.2,<5"]
 # The tests run SEMIC's own SHACL shapes from the pinned snapshot in data/ with pySHACL.
 dev = ["pytest>=8.0", "requests>=2.31", "pyshacl>=0.26"]
 
 [project.scripts]
 sdcdcatap = "sdcdcatap.cli:main"
+# The MCP server; the registry launches `sdcdcatap mcp` through the CLI.
+sdcdcatap-mcp = "sdcdcatap.mcp_server:main"
 
 [project.urls]
 Homepage = "https://github.com/SemanticDataCharter/sdc_dcat3_ap"
