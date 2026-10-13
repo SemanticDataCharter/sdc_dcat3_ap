@@ -8,5 +8,5 @@ Interoperability Test Bed's validator.
 from sdcreader import ModelPackage, load_package, fetch_package, read_model
 from .dcatap import build_catalog, load_declared, DeclaredInputError
 
-__version__ = "4.0.0"
+__version__ = "4.0.1"
 __all__ = ["ModelPackage", "load_package", "fetch_package", "read_model", "build_catalog", "load_declared", "DeclaredInputError", "__version__"]
