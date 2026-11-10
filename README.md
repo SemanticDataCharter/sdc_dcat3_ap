@@ -159,6 +159,8 @@ projection server.
 uvx sdcdcatap mcp            # or: sdcdcatap-mcp, or sdcdcatap mcp
 ```
 
+Also listed on [mcprush](https://mcprush.com/semanticdatacharter/sdcdcatap-mcp).
+
 ## Layout
 
 - The model's package is read with [`sdcreader`](https://github.com/SemanticDataCharter/sdcreader) (`load_package`,
